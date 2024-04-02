@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="G:/java/autoqa-example.store-Api"><classes><class name="com.example.tests.CartTests"><methods><include name="createCartTest"/><include name="deleteCartTest"/><include name="getCartTest"/><include name="getAllCarts"/></methods></class><class name="com.example.tests.OrderTests"><methods><include name="createOrderTest"/></methods></class><class name="com.example.tests.PaymentTest"><methods><include name="createPaymentTest"/></methods></class><class name="com.example.tests.ProductTests"><methods><include name="createProductTest"/><include name="updateProductTest"/><include name="deleteProductTest"/><include name="getProductTest"/><include name="getAllProductsTest"/></methods></class><class name="com.example.tests.UserTests"><methods><include name="createUserTest"/><include name="deleteUserTest"/><include name="updateUserTest"/><include name="getUser"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="G:/java/autoqa-example.store-Api">
+        <classes>
+           <class name="com.example.tests.UserTests"/>
+            <class name="com.example.tests.ProductTests"/>
+            <class name="com.example.tests.CartTests"/>
+            <class name="com.example.tests.OrderTests"/>
+            <class name="com.example.tests.PaymentTest"/>
+        </classes>
+    </test>
+</suite>
