@@ -1,0 +1,267 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "evy",
+      "email": "evy@example.co.il"
+    },
+    {
+      "id": "2",
+      "username": "dan",
+      "email": "dan@example.com"
+    },
+    {
+      "id": "3",
+      "username": "ran",
+      "email": "ran@example.com"
+    },
+    {
+      "id": "4",
+      "username": "bob",
+      "email": "bob@example.com"
+    },
+    {
+      "id": "5",
+      "username": "charlie",
+      "email": "charlie@example.com"
+    },
+    {
+      "id": 6,
+      "username": "gad",
+      "email": "gad@example.com"
+    },
+    {
+      "id": 6,
+      "username": "gad",
+      "email": "gad@example.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1770
+    },
+    {
+      "id": "2",
+      "name": "Desktop",
+      "price": 2500
+    },
+    {
+      "id": "3",
+      "name": "Tablet",
+      "price": 1100
+    },
+    {
+      "id": "4",
+      "name": "Smartphone",
+      "price": 900
+    },
+    {
+      "id": "5",
+      "name": "Headphones",
+      "price": 150
+    },
+    {
+      "id": "6",
+      "name": "Smartwatch",
+      "price": 300
+    },
+    {
+      "id": "7",
+      "name": "Gaming Console",
+      "price": 400
+    },
+    {
+      "id": "8",
+      "name": "Camera",
+      "price": 600
+    },
+    {
+      "id": "9",
+      "name": "Printer",
+      "price": 200
+    },
+    {
+      "id": "10",
+      "name": "External Hard Drive",
+      "price": 120
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "products": [
+        {
+          "id": 1,
+          "name": "Laptop",
+          "price": 1770
+        },
+        {
+          "id": 2,
+          "name": "Desktop",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "products": [
+        {
+          "id": 3,
+          "name": "Tablet",
+          "price": 1100
+        },
+        {
+          "id": 1,
+          "name": "Laptop",
+          "price": 1770
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "products": [
+        {
+          "id": 4,
+          "name": "Smartphone",
+          "price": 900
+        },
+        {
+          "id": 5,
+          "name": "Headphones",
+          "price": 150
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "user": {
+        "id": 1,
+        "username": "evy",
+        "email": "evy@example.co.il"
+      },
+      "cart": {
+        "products": [
+          {
+            "id": 1,
+            "name": "Laptop",
+            "price": 1770
+          },
+          {
+            "id": 2,
+            "name": "Desktop",
+            "price": 2500
+          }
+        ],
+        "id": 1
+      }
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": 2,
+        "username": "dan",
+        "email": "dan@example.com"
+      },
+      "cart": {
+        "products": [
+          {
+            "id": 3,
+            "name": "Tablet",
+            "price": 1100
+          },
+          {
+            "id": 1,
+            "name": "Laptop",
+            "price": 1770
+          }
+        ],
+        "id": 2
+      }
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": 3,
+        "username": "alice",
+        "email": "alice@example.com"
+      },
+      "cart": {
+        "products": [
+          {
+            "id": 4,
+            "name": "Smartphone",
+            "price": 900
+          },
+          {
+            "id": 5,
+            "name": "Headphones",
+            "price": 150
+          }
+        ],
+        "id": 3
+      }
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "order": {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "username": "evy",
+          "email": "evy@example.co.il"
+        },
+        "cart": {
+          "products": [
+            {
+              "id": 1,
+              "name": "Laptop",
+              "price": 1770
+            },
+            {
+              "id": 2,
+              "name": "Desktop",
+              "price": 2500
+            }
+          ],
+          "id": 1,
+          "totalAmount": 5270
+        }
+      },
+      "amount": 5270
+    },
+    {
+      "id": "2",
+      "order": {
+        "id": 2,
+        "user": {
+          "id": 2,
+          "username": "dan",
+          "email": "dan@example.com"
+        },
+        "cart": {
+          "products": [
+            {
+              "id": 3,
+              "name": "Tablet",
+              "price": 1100
+            },
+            {
+              "id": 1,
+              "name": "Laptop",
+              "price": 1770
+            }
+          ],
+          "id": 2,
+          "totalAmount": 2870
+        }
+      },
+      "amount": 2870
+    }
+  ]
+}
